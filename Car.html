@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Corolla</title>
+</head>
+<body>
+    <center>
+        <div id="main">
+        </div>
+        <div>
+            <ul id="car">
+            </ul>
+            <br><br/>
+        </div>
+    </center>
+    <script>
+    const img = new Image(700, 450);
+    img.src = "https://i0.wp.com/farm3.staticflickr.com/2845/33417294800_40fc94bae2_o.jpg?ssl=1";
+    var src = document.getElementById("main");
+    src.appendChild(img)
+
+    let car = {
+        Manufacturer: "Toyota",
+        MakeandModel: "Corolla AE101",
+        Engine: "1,3 2E",
+        BodyStyle: "Sedan",
+    };
+
+    document.getElementById("car").innerHTML = 
+    "Manufacturer:"  + car.Manufacturer +
+    "Make and Model:" + car.MakeandModel + 
+    "Engine:" + car.Engine + 
+    "Body Style:" + car.BodyStyle
+    
+    </script>
+</body>
+</html>
